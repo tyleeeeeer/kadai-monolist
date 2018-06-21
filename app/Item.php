@@ -17,4 +17,15 @@ class Item extends Model
     {
         return $this->users()->where('type', 'want');
     }
+    
+    
+    
+    
+    
+    
+    //have function 
+    public function have_users()
+    {
+        return $this->users()->where('type', 'have');
+    }
 }
